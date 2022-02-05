@@ -35,7 +35,7 @@ namespace SuperBMDLib.Animation
             Name = src_anim.Name;
             LoopMode = LoopMode.Loop;
             RotationFrac = 0;
-            Duration = (short)(src_anim.DurationInTicks * 30.0f);
+            Duration = (short)(src_anim.DurationInTicks * 1.0f);
 
             Tracks = new Track[bone_list.Count];
 
@@ -478,7 +478,7 @@ namespace SuperBMDLib.Animation
 
             foreach (Keyframe k in keys)
             {
-                float_data.Add(k.Time * 30.0f);
+                float_data.Add(k.Time * 1.0f);
                 float_data.Add(k.Key);
                 float_data.Add(k.InTangent);
             }
