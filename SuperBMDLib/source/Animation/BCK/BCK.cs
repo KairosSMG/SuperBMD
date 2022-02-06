@@ -506,7 +506,7 @@ namespace SuperBMDLib.Animation
 
             foreach (Keyframe k in keys)
             {
-                short_data.Add((short)(k.Time * 30.0f));
+                short_data.Add((short)(k.Time * 1.0f));
                 short_data.Add(RotationFloatToShort(k.Key, RotationFrac));
                 short_data.Add(RotationFloatToShort(k.InTangent, RotationFrac));
             }
